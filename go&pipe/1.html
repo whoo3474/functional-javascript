@@ -58,11 +58,14 @@
 </script>
 
 ## curry
+커리 구조를 왜쓸까?
+  => 인수를 미리 받아 저장하여 사용하고자 할때
 
 <script>
   const mult = curry((a, b) => a * b);
   log(mult(3)(2));
   const mult3 = mult(3);
+  // 3 이라는값을 미리 받아서 활용한다
   log(mult3(10));
   log(mult3(5));
   log(mult3(3));
